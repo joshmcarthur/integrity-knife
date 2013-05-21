@@ -1,5 +1,5 @@
 # Packages first
-%w(memcached redis-server htop fail2ban).each do |required_package|
+%w(memcached redis-server htop fail2ban git-core).each do |required_package|
   package required_package do
     action :install
   end

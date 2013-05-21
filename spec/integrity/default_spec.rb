@@ -14,7 +14,7 @@ describe 'integrity::default' do
     end.converge("integrity::default")
   end
 
-  required_packages = %w( htop memcached redis-server fail2ban)
+  required_packages = %w( git-core htop memcached redis-server fail2ban)
   required_packages.each { |pkg| it { expect(chef_run).to install_package(pkg) } }
 
   included_recipes = %w( user unattended-upgrades postgresql::server application ufw::default sqlite)
