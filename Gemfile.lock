@@ -72,6 +72,7 @@ GEM
       mixlib-shellout
       systemu
       yajl-ruby
+    rake (10.0.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rspec (2.13.0)
@@ -92,3 +93,4 @@ PLATFORMS
 DEPENDENCIES
   chefspec
   librarian-chef
+  rake
