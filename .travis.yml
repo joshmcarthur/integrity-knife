@@ -1,4 +1,5 @@
 before_install: gem update --system 1.8.25
+before_script: bundle exec librarian-chef install
 rvm:
   - 1.9.2
   - 1.9.3
