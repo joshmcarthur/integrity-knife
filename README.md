@@ -1,6 +1,8 @@
 Integrity-Knife
 ===
 
+[![Build Status](https://travis-ci.org/joshmcarthur/integrity-knife.png?branch=master)](https://travis-ci.org/joshmcarthur/integrity-knife)
+
 This repository is a [Chef](http://www.opscode.com/chef/) project designed to quickly and easily set up a fully-functioning [Integrity](http://integrity.github.io/) application on a server of your choosing. 
 
 **Please note that this repository is still a work in progress as I continue bugfixing the deployment process. Feel free to use it as a base for other work, but do not expect the project to work start-to-finish just yet**
