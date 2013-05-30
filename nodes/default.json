@@ -1,6 +1,3 @@
 {
-  "run_list": ["integrity::default"],
-  "unattended-upgrades": {
-    "send_email": false
-  }
+  "run_list": ["integrity::default"]
 }
