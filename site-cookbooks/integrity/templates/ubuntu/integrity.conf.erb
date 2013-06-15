@@ -1,8 +1,6 @@
-<VirtualHost *:80>
-    ServerName integrity
-    DocumentRoot /home/integrity/apps/integrity/current/public
-    <Directory /home/integrity/apps/integrity/current/public>
-        Allow from all
-        Options -MultiViews
-    </Directory>
-</VirtualHost>
+server {
+  listen 80;
+  server_name integrity localhost;
+  root /home/integrity/apps/integrity/current/public;
+  passenger_enabled on;
+}

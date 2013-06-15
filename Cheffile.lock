@@ -4,7 +4,6 @@ SITE
     apache2 (1.6.2)
     application (2.0.2)
     build-essential (1.4.0)
-    chef_gem (0.1.0)
     firewall (0.10.2)
     passenger_apache2 (2.0.0)
       apache2 (>= 1.0.4)
@@ -22,12 +21,18 @@ GIT
       apt (>= 0.0.0)
 
 GIT
-  remote: https://github.com/fnichol/chef-rvm
+  remote: https://github.com/fnichol/chef-rbenv
   ref: master
-  sha: 7038fb8c518d0d7785767de215b1ae463f237973
+  sha: 9afb4e5da2e6212504a12de3bbbd410cd96100f6
   specs:
-    rvm (0.9.1)
-      chef_gem (>= 0.0.0)
+    rbenv (0.7.3)
+
+GIT
+  remote: https://github.com/fnichol/chef-ruby_build.git
+  ref: master
+  sha: 4d3361995a6953076951693eff1b326ab499fe1e
+  specs:
+    ruby_build (0.8.1)
 
 GIT
   remote: https://github.com/fnichol/chef-user.git
@@ -85,8 +90,9 @@ DEPENDENCIES
   apt (>= 0)
   build-essential (>= 0)
   postgresql (>= 0)
+  rbenv (>= 0)
+  ruby_build (>= 0)
   runit (>= 0)
-  rvm (>= 0)
   sqlite (>= 0)
   ufw (>= 0)
   unattended-upgrades (>= 0)
